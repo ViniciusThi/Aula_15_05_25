@@ -1,11 +1,7 @@
-/**
- * Módulo Calculator - Contém a lógica para cálculo de notas e avaliação de alunos
- */
 class Calculator {
     /**
-     * Valida se uma nota está dentro do intervalo válido (0-10)
-     * @param {number} nota - A nota a ser validada
-     * @returns {boolean} true se a nota for válida, false caso contrário
+     * @param {number} nota 
+     * @returns {boolean} 
      */
     validarNota(nota) {
         return nota !== null && 
@@ -16,14 +12,13 @@ class Calculator {
     }
 
     /**
-     * Calcula a média entre duas notas
-     * @param {number} nota1 - Primeira nota
-     * @param {number} nota2 - Segunda nota
-     * @returns {number} A média calculada
-     * @throws {Error} Se alguma das notas for inválida
+     * @param {number} nota1 
+     * @param {number} nota2
+     * @returns {number}
+     * @throws {Error} 
      */
     calcularMedia(nota1, nota2) {
-        // Converte strings para números
+        
         const n1 = typeof nota1 === 'string' ? parseFloat(nota1) : nota1;
         const n2 = typeof nota2 === 'string' ? parseFloat(nota2) : nota2;
         
@@ -35,9 +30,8 @@ class Calculator {
     }
 
     /**
-     * Determina a situação do aluno com base na média
-     * @param {number} media - A média calculada
-     * @returns {string} A situação do aluno (Aprovado, Recuperação ou Reprovado)
+     * @param {number} media 
+     * @returns {string} 
      */
     determinarSituacao(media) {
         if (media >= 7) {
@@ -50,10 +44,9 @@ class Calculator {
     }
 
     /**
-     * Processa as notas do aluno
-     * @param {number} nota1 - Primeira nota
-     * @param {number} nota2 - Segunda nota
-     * @returns {object} Um objeto com a média e a situação do aluno
+     * @param {number} nota1 
+     * @param {number} nota2 
+     * @returns {object} 
      */
     processarNotas(nota1, nota2) {
         const media = this.calcularMedia(nota1, nota2);
@@ -66,7 +59,7 @@ class Calculator {
     }
 }
 
-// Exporta a classe Calculator se estiver em um ambiente de módulos
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = Calculator;
 } 
