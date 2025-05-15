@@ -65,29 +65,6 @@ npm test
 
 Isso irá executar todos os testes e gerar relatórios de cobertura.
 
-## Estrutura do Projeto
-
-```
-sistema-notas/
-├── .github/               # Configurações do GitHub Actions
-│   └── workflows/         # Workflows de CI
-│       └── ci.yml         # Configuração do CI
-├── js/                    # Código JavaScript
-│   ├── app.js             # Lógica de interface
-│   └── calculator.js      # Lógica de negócio
-├── tests/                 # Testes automatizados
-│   └── calculator.test.js # Testes da calculadora
-├── coverage/              # Relatórios de cobertura (gerado)
-├── index.html             # Página principal
-├── style.css              # Estilos CSS
-├── package.json           # Dependências e scripts
-├── sonar-project.properties # Configuração do SonarCloud
-└── README.md              # Documentação
-```
-
-## Screenshot da Aplicação
-
-![Screenshot do Sistema de Notas](screenshot.png)
 
 ## Contribuição
 
