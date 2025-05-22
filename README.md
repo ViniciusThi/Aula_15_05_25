@@ -1,5 +1,6 @@
-Vinicius Santos Tiberio
-Lidiane Marques da Silva
+*Vinicius Santos Tiberio
+*Lidiane Marques da Silva
+*Luan Rocha 
 
 # Sistema de Lançamento de Notas
 Um sistema para lançamento de notas de alunos com validações, cálculos de média e exibição de resultados, integrado com CI (GitHub Actions) e análise de código (SonarCloud).
